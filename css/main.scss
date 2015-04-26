@@ -1,0 +1,114 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+$base-font-size:   1.5em;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+$base-line-spacing: -1px;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #E09833;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    1200px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+
+.vertical-lines{
+  position: absolute;
+  z-index: 1;
+  margin-left: -1.2em;
+  margin-top: -.8em;
+}
+
+.headshot-img {
+  position: absolute;
+  width:  460px;
+  padding-left: 300px;
+}
+
+.page-heading-1 {
+  position: relative;
+  margin-left: 13.5em;
+  font-size: 2em;
+  padding-top: 1.2em;
+  color: white;
+}
+
+.page-heading-2 {
+  float: right;
+  position: absolute;
+  margin-left: 770px;
+  font-size: 2em;
+  margin-top: -1.8em;
+}
+
+.page-heading-3 {
+  position: relative;
+  font-size: 2.5em;
+  margin-left: 11.2em;
+  margin-top: .6em;
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  margin-left: 32em;
+  width: 300px;
+  margin-top: -1.2em;
+}
+
+.skills {
+  position: relative;
+  padding-top: 7.5em;
+  font-size: 1.2em;
+  padding-left: 7em;
+
+    .blogger{
+      padding-left:4.5em;
+    }
+
+    .comic{
+      padding-left:9em;
+      margin-right: -4em;
+    }
+}
