@@ -12,6 +12,8 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 $base-line-spacing: -1px;
 
+$decorative-font-family: "Lobster", cursive;
+
 $spacing-unit:     30px;
 
 $text-color:       #111;
@@ -99,16 +101,35 @@ $on-laptop:        800px;
 
 .skills {
   position: relative;
-  padding-top: 7.5em;
-  font-size: 1.2em;
-  padding-left: 7em;
+  padding-top: 12em;
+  font-size: 1em;
+  padding-left: 14em;
+  max-width:700px;
+  margin: 0 auto;
 
-    .blogger{
-      padding-left:4.5em;
+    .designer, .blogger, .comic, .more{
+      font-size: 1.2em;
     }
+}
 
-    .comic{
-      padding-left:9em;
-      margin-right: -4em;
-    }
+.portfolio{
+  width: 800px;
+  height: 700px;
+}
+
+img{
+  max-width: 200%;
+  vertical-align: baseline;
+}
+
+.right-diagonal-lines{
+  margin-top: 200px;
+}
+
+.my-designs{
+  font-family: $decorative-font-family;
+  font-size: 3em;
+  position:absolute;
+  margin-left: -5em;
+  margin-top: 6.4em;
 }
