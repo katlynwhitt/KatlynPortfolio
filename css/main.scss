@@ -132,11 +132,23 @@ img{
 .my-designs{
   font-family: $decorative-font-family;
   font-size: 4em;
-  position:absolute;
+  position: absolute;
   margin-left: -.3em;
   margin-top: 7.5em;
 }
 
+.design-desc{
+  position: relative;
+}
+
 .hidden-tortoise{
-  padding-top:8em;
+  padding-top: 8em;
+}
+
+.hidden-tortoise:hover{
+  opacity: .5;
+}
+
+footer{
+  margin-top: 20em;
 }
